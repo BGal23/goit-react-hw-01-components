@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 320px;
+    width: 324px;
     box-shadow: 0px 0px 5px 0px;
     border-radius: 5px;
     margin-top: 30px;
+    font-size: large;
+    color: gray;
 }
 
 .description {
@@ -15,6 +17,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    line-height: 10px;
+}
+
+.name {
+    font-size: larger;
+    color: black;
+    font-weight: 500;
 }
 
 .avatar{
@@ -22,4 +31,27 @@
     width: 128px;
     border-radius: 64px;
     border: 3px solid gray;
+}
+
+.stats {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+    background-color: #f3f6f9;
+    margin: 0;
+}
+
+.stats li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px 0px;
+    width: 108px;
+    height: 75px;
+}
+
+.quantity {
+    composes: name;
 }
