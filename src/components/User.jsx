@@ -1,3 +1,5 @@
+import user from '../css/user.module.css'
+
 export const Profile = ({
   avatar,
   name,
@@ -7,26 +9,26 @@ export const Profile = ({
   views,
   likes,
 }) => (
-  <div class="profile">
-    <div class="description">
-      <img src={avatar} alt="User avatar" class="avatar" />
+  <div class={user.profile}>
+    <div class={user.description}>
+      <img src={avatar} alt="User avatar" class={user.avatar} />
       <p class="name">{name}</p>
       <p class="tag">{tag}</p>
       <p class="location">{location}</p>
     </div>
 
-    <ul class="stats">
+    <ul class={user.stats}>
       <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{followers}</span>
+        <span class={user.label}>Followers</span>
+        <span class={user.quantity}>{followers}</span>
       </li>
       <li>
-        <span class="label">Views</span>
-        <span class="quantity">{views}</span>
+        <span class={user.label}>Views</span>
+        <span class={user.quantity}>{views}</span>
       </li>
       <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{likes}</span>
+        <span class={user.label}>Likes</span>
+        <span class={user.quantity}>{likes}</span>
       </li>
     </ul>
   </div>
