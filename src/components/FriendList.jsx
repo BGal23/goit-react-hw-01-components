@@ -1,10 +1,12 @@
+import friendsList from '../css/friends.module.css'
+
 export const FriendList = ({ friends }) => (
-  <ul class="friend-list">
+  <ul class={friendsList.friendList}>
     {friends.map(friend => (
-      <li class="item">
-        <span class="status">{friend.isOnline}</span>
-        <img class="avatar" src={friend.avatar} alt="User avatar" width="48" />
-        <p class="name">{friend.name}</p>
+      <li class={friendsList.item}>
+        <span class={friendsList.status}>{friend.isOnline}</span>
+        <img class={friendsList.avatar} src={friend.avatar} alt="User avatar" width="48" />
+        <p class={friendsList.name}>{friend.name}</p>
       </li>
     ))}
   </ul>
