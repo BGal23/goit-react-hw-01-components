@@ -1,7 +1,7 @@
 import transaction from '../css/transaction.module.css'
 
 export const TransactionHistory = ({transactions}) => (
-  <table class={transaction.transactionHistory}>
+  <table className={transaction.transactionHistory}>
     <thead>
       <tr>
         <th>Type</th>
@@ -12,7 +12,7 @@ export const TransactionHistory = ({transactions}) => (
 
     <tbody>
         {transactions.map(data => (
-      <tr>
+      <tr key={data.id}>
         <td>{data.type}</td>
         <td>{data.amount}</td>
         <td>{data.currency}</td>
