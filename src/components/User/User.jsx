@@ -1,4 +1,4 @@
-import user from '../css/user.module.css'
+import user from './user.module.css'
 
 export const Profile = ({
   avatar,

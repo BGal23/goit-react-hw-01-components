@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import user from '../files/user.json';
-import data from '../files/data.json';
-import { getNewData } from './Statistics';
-import friends from '../files/friends.json';
-import transactions from '../files/transactions.json';
-import { Profile } from './User';
-import { Statistics } from './Statistics';
-import { FriendList } from './FriendList';
-import { TransactionHistory } from './TransactionHistory';
+import user from './User/username.json'
+import data from './Statistics/data.json';
+import { getNewData } from './Statistics/Statistics';
+import friends from './FriendList/friends.json';
+import transactions from './Transaction/transactions.json';
+import { Profile } from './User/User';
+import { Statistics } from './Statistics/Statistics';
+import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './Transaction/TransactionHistory';
 
 getNewData(data);
 
